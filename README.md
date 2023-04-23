@@ -9,7 +9,7 @@ Write your own printf function.
 
 
 
-^ In this picture, Kris, and Jul
+- In this picture, Kris, and Jul
 
 Resources
 Read or watch:
