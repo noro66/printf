@@ -3,7 +3,7 @@
 
 
 
-int (*check_func(const char *p))(va_list);
+int (*check_func(const char *p))(va_list)
 {
 	int i;
 
@@ -11,8 +11,8 @@ int (*check_func(const char *p))(va_list);
 		{"c",prnt_ch},
 		{"s",prnt_str},
 		{"%",prnt_cnt},
-		{NULL, NULL}};
-	for (i = 0;chekers[i] != NULL;i++)
+		{"NULL","NULL"}};
+	for (i = 0;chekers[i] != "NULL" ;i++)
 	{
 		if (*(chekers[i].t) == *p)
 			return (chekers[i].f);
