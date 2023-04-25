@@ -1,9 +1,9 @@
 #include "main.h"
 
-/*** project done whit nouamane - mohamed ***/
+/*** project done by nouamane - mohamed ***/
 
 /**
- * _printf - function that print any thing;
+ * _printf - function that print anything you put inside the function.
  *
  * @format: argument
  *
