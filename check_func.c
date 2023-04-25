@@ -1,6 +1,8 @@
 #include "main.h"
 
 /**
+ * this project done with nouamane - mohamed .
+ *
  * check_func - manage switch cases
  * @id : first argument
  * @args : second argument
