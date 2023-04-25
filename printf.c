@@ -7,7 +7,7 @@
  * Return: number of character printed.
  */
 
-int _printf(const char *format, ...);
+int _printf(const char *format, ...)
 {
 	int num_prnt = 0;
 	
@@ -17,21 +17,22 @@ int _printf(const char *format, ...);
 	va_list arglist;
 
 	va_start(arglist, format);
-	const char *p == format;
+	const char *p = format;
+
 	int (*f)(va_list);
 
-	while (*p != \0)
+	while (*p != '\0')
 	{
 		if (*p == '%')
 		{
-			f = check_func(*(p+1));
+			f = check_func(p++);
 			if (f != NULL)
 			{
 			num_prnt += f(arglist);
 			p += 2;
 			continue;
 			}
-			if (*(p + 1) == \0)
+			if (*(p + 1) =='\0')
 					break;
 			if (*(p + 1))
 			{
