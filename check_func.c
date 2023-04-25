@@ -10,7 +10,8 @@ int (*check_func(const char *p))(va_list)
 	fnc_t chekers[4]={
 		{"c",prnt_ch},
 		{"s",prnt_str},
-		{"%",prnt_cnt},
+		{"i",prnt_int},
+		{"d",prnt_int},
 		{NULL,NULL},
 				};
 	for (i = 0;chekers[i].t != NULL ;i++)

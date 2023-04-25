@@ -3,6 +3,8 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <limits.h>
+
 
 int prnt_ch(va_list arglist);
 int prnt_str(va_list arglist);

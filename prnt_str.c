@@ -1,12 +1,12 @@
 #include "main.h"
 
-/*** team project rabia_laila ***/
+/*** team project nouaamane_mohamed ***/
 /**
  * help_string - manage the 's' case
  * @args: The first argument
  * Return: integer
  */
-int help_string(va_list args)
+int prnt_str(va_list arglist)
 {
 	char *s = va_arg(args, char *);
 	int i = 0;
