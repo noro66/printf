@@ -24,7 +24,7 @@ void set_int(int a, int *i)
 }
 
 /**
- * help_int - manage integer
+ * prnt_int - manage integer
  * @args: first arguments
  *
  * Return: integer
