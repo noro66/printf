@@ -14,31 +14,30 @@ int _printf(const char *format, ...)
 	if (!format)
 		return (-1);
 
-	va_list arglist;
+	va_list args;
 
-	va_start(arglist, format);
+	va_start(args, format);
 	const char *p = format;
-
-	int (*f)(va_list);
 
 	while (*p != '\0')
 	{
 		if (*p == '%')
 		{
+			p++;
 			if (*p == '\0')
 				return (-1);
 
-			len += *check_func(&p, args);
-			else
-			{
-			num_prnt += _putchar(*p);
-			continue;
-			}
-			p++;
+			num_prnt += check_func(*p, args);
+		}
+		else
+		{
+		num_prnt += _putchar(*p);
+		}
+		p++;
 
-			}
+		}
 
-			va_end(arglist);
+			va_end(args);
 			return (num_prnt);
 }
 

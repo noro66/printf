@@ -6,16 +6,12 @@
 #include <limits.h>
 
 
-int prnt_ch(va_list arglist);
-int prnt_str(va_list arglist);
-int prnt_cnt(va_list arglist);
-int (*check_func(const char*))(va_list);
+int prnt_str(va_list args);
+int prnt_ch(va_list args);
+int check_func(char id, va_list args);
 int _putchar(char c);
 int _printf(const char *format, ...);
 
-typedef struct fnc{
-	char *t;
-	int (*f)(va_list);
-}fnc_t;
+
 
 #endif

@@ -5,16 +5,7 @@
  * @args : the first argument
  * Return: integer
  */
-char prnt_ch(va_list arglist)
+int help_char(va_list args)
 {
-	char ch =(va_arg(args, int);
-	int num_pt = 0;
-
-	if (ch)
-	{
-		num_pt = _putchar(ch);
-	return (num_pt);
-	}
-	else
-		return (0)
+	return (_putchar(va_arg(args, int)));
 }

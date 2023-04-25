@@ -6,7 +6,7 @@
  * @args: The first argument
  * Return: integer
  */
-int prnt_str(va_list arglist)
+int prnt_str(va_list args)
 {
 	char *s = va_arg(args, char *);
 	int i = 0;

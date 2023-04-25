@@ -1,30 +1,32 @@
 #include "main.h"
 
+/**
+ * switch_help - manage switch cases
+ * @id : first argument
+ * @args : second argument
+ *
+ * Return: integer
+ */
 
-
-
-int (*check_func(const char *p))(va_list)
+int check_func(char id, va_list args)
 {
-	int i;
-	int j;
-	fnc_t array[]={
-		{"c",prnt_ch(args)},
-		{"s",prnt_str(args)},
-		};
+	int i = 0;
 
-	for (i = 0; array[i].t != NULL ;i++)
+	switch (id)
 	{
-		if (*(chekers[i].t) == *p)
-		{
-			j += (array[i].f);
-			break;
-		}
-		else 
-		{
-		j += _putchar('%');
-		j += _putchar(id);
+	case 'c':
+		i += prnt_ch(args);
 		break;
-		}
+	case 's':
+		i += prnt_str(args);
+		break;
+	case '%':
+		i += _putchar('%');
+		break;
+	default:
+		i += _putchar('%');
+		i += _putchar(id);
+		break;
 	}
-	return (j);
+	return (i);
 }
