@@ -1,6 +1,8 @@
+#include "main.h"
+#include <stdio.h>
 #include <stdarg.h>
 
-/** Team project Laila_Rabia **/
+/** this project is done by nouaamane - mohamed **/
 /**
  * set_int - use recursion
  * @a: first argument
