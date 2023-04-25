@@ -25,6 +25,10 @@ int check_func(char id, va_list args)
 	case '%':
 		i += _putchar('%');
 		break;
+	case 'd':
+	case 'i':
+		i += prnt_int(args);
+		break;
 	default:
 		i += _putchar('%');
 		i += _putchar(id);

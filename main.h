@@ -15,6 +15,9 @@ int prnt_ch(va_list args);
 /* the right fonction to type arglist with.*/
 int check_func(char id, va_list args);
 
+/* this function manage integer by recursion and print it */
+int prnt_int(va_list args)
+
 /*that is the famous putchar that print the caracter,*/
 /*and return (1) if there is non caracter returns (-1).*/
 int _putchar(char c);
