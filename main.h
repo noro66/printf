@@ -18,8 +18,9 @@ int prnt_ch(va_list args);
 /* the right fonction to type arglist with.*/
 int check_func(char id, va_list args);
 
-/* prnt_int - manage and print integer .*/
+/*set_prnt_int - manage and print integer .*/
 int prnt_int(va_list args);
+void set_int(int a, int *i);
 
 /*that is the famous putchar that print the caracter,*/
 /*and return (1) if there is non caracter returns (-1).*/
