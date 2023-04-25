@@ -1,6 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -23,6 +22,7 @@ int _putchar(char c);
 /* and this is main fonction printf that printf what you put inside her */
 /* and return the number of character printed.*/
 int _printf(const char *format, ...);
+
 
 
 
