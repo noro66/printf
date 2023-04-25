@@ -6,38 +6,31 @@
  *
  * Return: number of character printed.
  */
-
 int _printf(const char *format, ...)
 {
-	int num_prnt = 0;
-	
-	if (!format)
-		return (-1);
-
+	int x = 0, num_prnt = 0;
 	va_list args;
 
 	va_start(args, format);
-	const char *p = format;
+	if (format == NULL)
+		return (-1);
 
-	while (*p != '\0')
+	while (format[x] != '\0')
 	{
-		if (*p == '%')
+		if (format[x] == '%')
 		{
-			p++;
-			if (*p == '\0')
+			x++;
+			if (format[x] == '\0')
 				return (-1);
-
-			num_prnt += check_func(*p, args);
+		num_prnt += check_func(format[x], args);
 		}
 		else
 		{
-		num_prnt += _putchar(*p);
+			len += _putchar(format[x]);
 		}
-		p++;
-
-		}
-
-			va_end(args);
-			return (num_prnt);
+		x++;
+	}
+	va_end(args);
+	return (len);
 }
 
