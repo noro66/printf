@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * switch_help - manage switch cases
+ * check_func - manage switch cases
  * @id : first argument
  * @args : second argument
  *

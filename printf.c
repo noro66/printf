@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _printf - function that print any thing;
  *
@@ -6,6 +7,7 @@
  *
  * Return: number of character printed.
  */
+
 int _printf(const char *format, ...)
 {
 	int x = 0, num_prnt = 0;
@@ -26,11 +28,11 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			len += _putchar(format[x]);
+			num_prnt += _putchar(format[x]);
 		}
 		x++;
 	}
 	va_end(args);
-	return (len);
+	return (num_prnt);
 }
 

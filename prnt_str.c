@@ -2,7 +2,7 @@
 
 /*** team project nouaamane_mohamed ***/
 /**
- * help_string - manage the 's' case
+ * prnt_str - manage the 's' case
  * @args: The first argument
  * Return: integer
  */
