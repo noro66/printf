@@ -1,5 +1,7 @@
 #include "main.h"
-/*** team project nouaamane_mohamed ***/
+
+/*** this project done whit nouamane - mohamed .***/
+
 /**
  * prnt_ch - manage the case c
  * @args : the first argument

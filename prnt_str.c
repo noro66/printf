@@ -1,8 +1,11 @@
 #include "main.h"
 
-/*** team project nouaamane_mohamed ***/
+
+/*** this project done whit nouamane - mohamed.***/
+
 /**
  * prnt_str - manage the 's' case
+ *
  * @args: The first argument
  * Return: integer
  */
